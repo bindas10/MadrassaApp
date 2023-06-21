@@ -75,7 +75,22 @@ public class DBHelper extends SQLiteOpenHelper {
 
         db.insert(User_table, null, values);
         db.close();
+    }
 
+    public void insertTask_details(Task_Details task) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_DATE, task.getDate());
+        values.put(COLUMN_IDD, task.getId());
+        values.put(COLUMN_NAME_surah, task.getName());
+        values.put(COLUMN_RANGE, task.getRange());
+        values.put(COLUMN_LAST_PARA, task.getLast_para());
+        values.put(COLUMN_MANZIL, task.getManzil());
+
+
+        db.insert(table, null, values);
+        db.close();
 
     }
 
