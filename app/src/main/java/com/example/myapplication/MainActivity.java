@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         ((Button)findViewById(R.id.Search_student)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(MainActivity.this,Search_Student.class);
+                Intent intent=new Intent(MainActivity.this,Search_student.class);
                 startActivity(intent);
             }
         });
