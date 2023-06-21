@@ -77,6 +77,29 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
     }
 
+    Cursor ReadAlldata()
+    {
+        String query="SELECT * FROM " +User_table;
+        SQLiteDatabase sqDB=this.getReadableDatabase();
+        Cursor cursor=null;
+        if(sqDB!=null)
+        {
+            cursor= sqDB.rawQuery(query,null);
+        }
+        return cursor;
+    }
+    Cursor ReadAlldata(String id)
+    {
+        String query="SELECT * FROM " +User_table+ "  WHERE "+COLUMN_ID+"="+id ;
+        SQLiteDatabase sqDB=this.getReadableDatabase();
+        Cursor cursor=null;
+        if(sqDB!=null)
+        {
+            cursor= sqDB.rawQuery(query,null);
+        }
+        return cursor;
+    }
+
     public void insertTask_details(Task_Details task) {
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -93,5 +116,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
 
     }
+
+
 
 }
