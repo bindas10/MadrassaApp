@@ -116,7 +116,28 @@ public class DBHelper extends SQLiteOpenHelper {
         db.close();
 
     }
-
+    Cursor ReadAlldata_details(String id)
+    {
+        String query="SELECT * FROM " +table+" WHERE "+COLUMN_IDD+"="+id ;
+        SQLiteDatabase sqDB=this.getReadableDatabase();
+        Cursor cursor=null;
+        if(sqDB!=null)
+        {
+            cursor= sqDB.rawQuery(query,null);
+        }
+        return cursor;
+    }
+    Cursor ReadAlldata_details()
+    {
+        String query="SELECT * FROM " +table ;
+        SQLiteDatabase sqDB=this.getReadableDatabase();
+        Cursor cursor=null;
+        if(sqDB!=null)
+        {
+            cursor= sqDB.rawQuery(query,null);
+        }
+        return cursor;
+    }
 
 
 }
