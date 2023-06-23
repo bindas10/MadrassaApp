@@ -30,13 +30,13 @@ public class AddStudent_form extends AppCompatActivity {
 
                 if(id.isEmpty()||name.isEmpty()||std_class.isEmpty()||age.isEmpty())
                 {
-                    Toast.makeText(AddStudent_form.this, "Fields is empty !", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddStudent_form.this, "Input is empty !", Toast.LENGTH_SHORT).show();
                 }
                 else {
 
                     DBHelper db=new DBHelper(AddStudent_form.this);
                     db.insertStudent(new Student_profile(id,name,std_class,age));
-                    Toast.makeText(AddStudent_form.this, "Submit Successfully :)", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddStudent_form.this, "Submit Successfully", Toast.LENGTH_SHORT).show();
                     ((EditText)findViewById(R.id.student_id)).setText("");
                     ((EditText)findViewById(R.id.student_name)).setText("");
                     ((EditText)findViewById(R.id.student_class)).setText("");

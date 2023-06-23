@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="72dp"
         android:orientation="horizontal"
-        android:background="@color/teal_700">
+        android:background="@color/cardview_dark_background">
 
         <TextView
             android:id="@+id/show_NAME_detail"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
-            android:text="class"
+            android:text="Class"
             android:textSize="25sp"
             android:textColor="@color/white" />
 
@@ -53,7 +53,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="135dp"
-        android:background="@color/teal_700"
+        android:background="@color/cardview_dark_background"
         android:orientation="horizontal"
         android:layout_marginTop="1dp">
 
@@ -81,7 +81,7 @@
                 android:layout_marginTop="20dp"
                 android:gravity="center"
                 android:text="TextView"
-                android:textColor="#CB0909"
+                android:textColor="@color/white"
                 android:textSize="18sp" />
 
             <TextView

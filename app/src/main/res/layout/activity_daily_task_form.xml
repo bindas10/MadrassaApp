@@ -40,9 +40,9 @@
 
         <LinearLayout
             android:id="@+id/linearLayout_daily"
-            android:layout_width="match_parent"
-            android:layout_height="172dp"
-            android:background="#37B2A0"
+            android:layout_width="413dp"
+            android:layout_height="99dp"
+            android:background="@color/cardview_dark_background"
             android:orientation="vertical"
 
             app:layout_constraintEnd_toEndOf="parent"
@@ -51,9 +51,9 @@
 
             <TextView
                 android:id="@+id/textview_dailytask"
-                android:layout_width="wrap_content"
+                android:layout_width="402dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:padding="15sp"
                 android:text="Add Daily Task"
@@ -78,7 +78,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Surah Name "
+                android:text="Name of Surah "
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -100,7 +100,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
                 android:gravity="center"
-                android:text="Range of Surah"
+                android:text="Range of Ayaat"
                 android:textSize="16sp" />
 
             <EditText
@@ -111,7 +111,7 @@
                 android:layout_marginTop="10dp"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="e.g 0 to 12"
+                android:hint="0 to 100"
                 android:inputType="textPersonName" />
 
 
@@ -191,7 +191,7 @@
             android:ems="10"
             android:gravity="center"
             android:inputType="textPersonName"
-            android:hint="Enter Id of the Student"
+            android:hint="Enter ID of Student"
             app:layout_constraintBottom_toTopOf="@+id/textView4"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
